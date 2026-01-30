@@ -1,0 +1,118 @@
+/* Basic reset (comme ton cours) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FFF0F3; /* Ton fond rose */
+  color: #333;
+  line-height: 1.5;
+}
+
+.callout {
+  background-color: #590D22; /* Ton bordeaux */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #FFB3C1;
+}
+
+.btn {
+  padding: 10px;
+  background-color: #C9184A;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.error {
+  color: #C9184A;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Style de la liste */
+#todo-list {
+  list-style: none;
+  margin-top: 10px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #FFD6E0;
+}
+
+/* CLASSE POUR TERMINER (Barrer) */
+.done span {
+  text-decoration: line-through;
+  color: #aaa;
+  font-style: italic;
+}
+
+.delete-btn {
+  background-color: #800F2F;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.nav {
+  background-color: #800F2F;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+li.dragging {
+  opacity: 0.5;
+  border: 2 dashed #C9184A;
+}
+
+.texte-tache {
+  flex: 1;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  gap: 5px;
+}
